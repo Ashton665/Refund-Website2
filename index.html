@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FINTECH REFUND BANK - Secure Claims Processing & Refunds</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-university"></i>
+                <span>FINTECH CANADIAN GOVERNMENT REFUND BANK</span> 
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="dashboard.html" class="nav-link nav-btn">Dashboard</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Secure Refund Processing for Canadians</h1>
+                <p class="hero-subtitle">Professional banking solutions for intelligent fund recovery. Fast, transparent, and trustworthy.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary btn-lg" onclick="openDashboard()">
+                        <span>Claim Funds Now</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-secondary btn-lg">
+                        <span>Learn More</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="hero-card">
+                <div class="refund-card"> 
+                    <div class="card-header">
+                        <h3>Your Refund Balance</h3>
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <div class="card-amount">.
+                         
+                    </div>
+                    <p class="card-status">Claim Available</p>
+                    <button class="btn btn-primary btn-block">Claim Funds</button>
+                    <div class="card-meta">
+                        <span>Last Updated: Now</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose FINTECH?</h2>
+                <p>Enterprise--grade banking infrastructure with minimalist design excellence</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Military-Grade Security</h3>
+                    <p>End-to-end encryption with ISO 27001 compliance and 24/7 monitoring</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Instant Processing and Payment</h3>
+                    <p>Claims verified and processed within 24 hours of submission</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Real-Time Tracking</h3>
+                    <p>Monitor your claim status with live updates and detailed analytics</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Direct access to dedicated support team via Email fintechrefund@gmail.com</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>Zero Hidden Fees</h3>
+                    <p>Transparent pricing with no surprise charges or deductions</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Global Coverage</h3>
+                    <p>Process refunds from 150+ countries with multi-currency support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2>Success Stories</h2>
+                <p>Hear from clients who recovered their funds with FINTECH</p>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"FINTECH recovered $8,500 for me in just 3 days. The process was incredibly smooth and transparent. Highly recommended!"</p>
+                    <div class="review-author">
+                        <div class="author-avatar">SR</div>
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <p>Verified Claim - Austin, TX</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Best banking experience ever. The customer support team was extremely helpful and my claim was approved within 24 hours!"</p>
+                    <div class="review-author">
+                        <div class="author-avatar">MK</div>
+                        <div>
+                            <h4>Michael Chen</h4>
+                            <p>Verified Claim - San Francisco, CA</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"I recovered $15,200 through FINTECH. Their transparency and professionalism exceeded all expectations. Worth every penny!"</p>
+                    <div class="review-author">
+                        <div class="author-avatar">ER</div>
+                        <div>
+                            <h4>Emily Rodriguez</h4>
+                            <p>Verified Claim - Miami, FL</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"After my initial doubts, FINTECH proved to be completely legitimate. Got my $5,600 refund in record time!"</p>
+                    <div class="review-author">
+                        <div class="author-avatar">JD</div>
+                        <div>
+                            <h4>James Patterson</h4>
+                            <p>Verified Claim - Boston, MA</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Professional, secure, and efficient. FINTECH handled my $22,000 claim flawlessly. Outstanding service!"</p>
+                    <div class="review-author">
+                        <div class="author-avatar">AL</div>
+                        <div>
+                            <h4>Amanda Lee</h4>
+                            <p>Verified Claim - New York, NY</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Recovered $9,800 effortlessly. The dashboard is intuitive and the support team is incredibly responsive. 10/10!"</p>
+                    <div class="review-author">
+                        <div class="author-avatar">DW</div>
+                        <div>
+                            <h4>David Williams</h4>
+                            <p>Verified Claim - Seattle, WA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Refunds Section -->
+    <section class="live-refunds">
+        <div class="container">
+            <div class="section-header">
+                <h2>Live Fund Recovery Activity</h2>
+                <p>Real-time notifications from verified clients receiving refunds</p>
+            </div>
+            <div class="refund-feed">
+                <div class="refund-item">
+                    <div class="refund-avatar">EJ</div>
+                    <div class="refund-info">
+                        <p class="refund-name">Ethan Jackson</p>
+                        <p class="refund-desc">Received $6,450 refund</p>
+                    </div>
+                    <p class="refund-time">2 minutes ago</p>
+                </div>
+
+                <div class="refund-item">
+                    <div class="refund-avatar">NP</div>
+                    <div class="refund-info">
+                        <p class="refund-name">Natasha Patel</p>
+                        <p class="refund-desc">Received $11,200 refund</p>
+                    </div>
+                    <p class="refund-time">8 minutes ago</p>
+                </div>
+
+                <div class="refund-item">
+                    <div class="refund-avatar">RC</div>
+                    <div class="refund-info">
+                        <p class="refund-name">Robert Clark</p>
+                        <p class="refund-desc">Received $7,950 refund</p>
+                    </div>
+                    <p class="refund-time">15 minutes ago</p>
+                </div>
+
+                <div class="refund-item">
+                    <div class="refund-avatar">SS</div>
+                    <div class="refund-info">
+                        <p class="refund-name">Sophia Smith</p>
+                        <p class="refund-desc">Received $13,600 refund</p>
+                    </div>
+                    <p class="refund-time">22 minutes ago</p>
+                </div>
+
+                <div class="refund-item">
+                    <div class="refund-avatar">MB</div>
+                    <div class="refund-info">
+                        <p class="refund-name">Marcus Brown</p>
+                        <p class="refund-desc">Received $5,300 refund</p>
+                    </div>
+                    <p class="refund-time">31 minutes ago</p>
+                </div>
+
+                <div class="refund-item">
+                    <div class="refund-avatar">OK</div>
+                    <div class="refund-info">
+                        <p class="refund-name">Olivia Kim</p>
+                        <p class="refund-desc">Received $8,750 refund</p>
+                    </div>
+                    <p class="refund-time">45 minutes ago</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>FINTECH REFUND BANK</h3>
+                    <p>Secure, transparent, and professional fund recovery services worldwide.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Direct Admin Support</h4>
+                    <div class="support-links">
+                        <a href="https://wa.me/1234567890" class="support-btn whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                        <a href="https://m.me/fintechrefund" class="support-btn messenger" target="_blank">
+                            <i class="fab fa-facebook-messenger"></i>
+                            <span>Messenger</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FINTECH REFUND BANK. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Contact Widget -->
+    <div class="floating-widget">
+        <button class="widget-toggle" onclick="toggleWidget()">
+            <i class="fas fa-comments"></i>
+        </button>
+        <div class="widget-menu" id="widgetMenu">
+            <a href="https://wa.me/1234567890" class="widget-btn whatsapp" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp Support</span>
+            </a>
+            <a href="https://m.me/fintechrefund" class="widget-btn messenger" target="_blank">
+                <i class="fab fa-facebook-messenger"></i>
+                <span>Messenger Support</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

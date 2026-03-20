@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - FINTECH REFUND BANK</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="dashboard-body">
+    <!-- Side Navigation -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <i class="fas fa-university"></i>
+            <span>FINTECH</span>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="#" class="nav-item active" data-section="overview">
+                <i class="fas fa-chart-line"></i>
+                <span>Overview</span>
+            </a>
+            <a href="#" class="nav-item" data-section="create-account">
+                <i class="fas fa-plus-circle"></i>
+                <span>New Account</span>
+            </a>
+            <a href="#" class="nav-item" data-section="transactions">
+                <i class="fas fa-exchange-alt"></i>
+                <span>Transactions</span>
+            </a>
+            <a href="#" class="nav-item" data-section="claims">
+                <i class="fas fa-file-alt"></i>
+                <span>My Claims</span>
+            </a>
+            <a href="#" class="nav-item" data-section="settings">
+                <i class="fas fa-cog"></i>
+                <span>Settings</span>
+            </a>
+            <a href="index.html" class="nav-item">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Back to Home</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="dashboard-main">
+        <!-- Header -->
+        <header class="dashboard-header">
+            <div class="header-left">
+                <button class="menu-toggle" onclick="toggleSidebar()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h1>Welcome to Your Dashboard</h1>
+            </div>
+            <div class="header-right">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search transactions...">
+                </div>
+                <div class="user-profile">
+                    <div class="avatar">MVM</div>
+                    <span>Maryan Van Mierlo</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Dashboard Content -->
+        <div class="dashboard-content">
+
+            <!-- Overview Section -->
+            <section class="section active" id="overview">
+                <!-- Stats Cards -->
+                 
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span>Total Refunds Claimed</span>
+                            <i class="fas fa-wallet"></i>
+                        </div>
+                        <h3 class="stat-value"></h3>
+                        <p class="stat-change"></p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span>Available Balance</span>
+                            <i class="fas fa-piggy-bank"></i>
+                        </div>
+                        <h3 class="stat-value"></h3>
+                        <p class="stat-change">Ready to claim</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span>Active Claims</span>
+                            <i class="fas fa-file-circle-check"></i>
+                        </div>
+                        <h3 class="stat-value">19</h3>
+                        <p class="stat-change">Processing</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span>Success Rate</span>
+                            <i class="fas fa-percent"></i>
+                        </div>
+                        <h3 class="stat-value">100%</h3>
+                        <p class="stat-change">Above average</p>
+                    </div>
+                </div>
+                
+
+                <!-- Main Action Card -->
+                <div class="action-card">
+                    <div class="action-content">
+                        <h2>Ready to Claim Your Refund?</h2>
+                        <p>Your available balance of $30,000 is ready for withdrawal. You will need to pay a $500 processing fee to Start the claim process now and receive funds within 24 hours.</p>
+                        <button class="btn btn-primary btn-lg">
+                            <i class="fas fa-arrow-right"></i>
+                            <span>Claim Funds Now</span>
+                        </button>
+                    </div>
+                    <div class="action-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                </div>
+
+                <!-- Transactions List -->
+                <div class="card">
+                    <div class="card-header-dash">
+                        <h3>Recent Transactions</h3>
+                        <a href="#transactions" class="view-all">View All</a>
+                    </div>
+                    <div class="transactions-list">
+                        <div class="transaction-item">
+                            <div class="transaction-icon refund">
+                                <i class="fas fa-arrow-down"></i>
+                            </div>
+                            <div class="transaction-details">
+                                <p class="transaction-title">Refund Received</p>
+                                <p class="transaction-meta">From: Digital Payment Provider</p>
+                            </div>
+                            <div class="transaction-amount">
+                                <p class="amount">+$5,200</p>
+                                <p class="date">Jan 15, 2026</p>
+                            </div>
+                        </div>
+                        <div class="transaction-item">
+                            <div class="transaction-icon claim">
+                                <i class="fas fa-document"></i>
+                            </div>
+                            <div class="transaction-details">
+                                <p class="transaction-title">Claim Filed</p>
+                                <p class="transaction-meta">Case #FTB-2026-001234</p>
+                            </div>
+                            <div class="transaction-amount">
+                                <p class="amount">$3,400</p>
+                                <p class="date">Jan 12, 2026</p>
+                            </div>
+                        </div>
+                        <div class="transaction-item">
+                            <div class="transaction-icon success">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="transaction-details">
+                                <p class="transaction-title">Claim Approved</p>
+                                <p class="transaction-meta">Case #FTB-2026-001233</p>
+                            </div>
+                            <div class="transaction-amount">
+                                <p class="amount">+$7,850</p>
+                                <p class="date">Jan 10, 2026</p>
+                            </div>
+                        </div>
+                        <div class="transaction-item">
+                            <div class="transaction-icon refund">
+                                <i class="fas fa-arrow-down"></i>
+                            </div>
+                            <div class="transaction-details">
+                                <p class="transaction-title">Refund Received</p>
+                                <p class="transaction-meta">From: Merchant Account</p>
+                            </div>
+                            <div class="transaction-amount">
+                                <p class="amount">+$2,100</p>
+                                <p class="date">Jan 8, 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Create New Account Section -->
+            <section class="section" id="create-account">
+                <div class="card full-card">
+                    <div class="card-header-dash">
+                        <h3>Create New Bank Account</h3>
+                    </div>
+                    <form class="account-form">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>Account Type</label>
+                                <select required>
+                                    <option value="">Select Account Type</option>
+                                    <option value="personal">Personal Refund Account</option>
+                                    <option value="business">Business Refund Account</option>
+                                    <option value="corporate">Corporate Account</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Account Currency</label>
+                                <select required>
+                                    <option value="usd">USD (US Dollar)</option>
+                                    <option value="eur">EUR (Euro)</option>
+                                    <option value="gbp">GBP (British Pound)</option>
+                                    <option value="aud">AUD (Australian Dollar)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>First Name</label>
+                                <input type="text" placeholder="Enter first name" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Last Name</label>
+                                <input type="text" placeholder="Enter last name" required>
+                            </div>
+                            <div class="form-group full">
+                                <label>Email Address</label>
+                                <input type="email" placeholder="Enter email address" required>
+                            </div>
+                            <div class="form-group full">
+                                <label>Phone Number</label>
+                                <input type="tel" placeholder="Enter phone number" required>
+                            </div>
+                            <div class="form-group full">
+                                <label>Bank Account Number</label>
+                                <input type="text" placeholder="Enter bank account number" required>
+                            </div>
+                            <div class="form-group full">
+                                <label>Routing Number</label>
+                                <input type="text" placeholder="Enter routing number" required>
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Create Account</button>
+                            <button type="reset" class="btn btn-secondary">Clear</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Transactions Section -->
+            <section class="section" id="transactions">
+                <div class="card full-card">
+                    <div class="card-header-dash">
+                        <h3>All Transactions</h3>
+                        <div class="filter-group">
+                            <select>
+                                <option>All Transactions</option>
+                                <option>Refunds</option>
+                                <option>Claims</option>
+                                <option>Approved</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="transactions-full">
+                        <div class="transaction-row header">
+                            <span>Date</span>
+                            <span>Type</span>
+                            <span>Description</span>
+                            <span>Amount</span>
+                            <span>Status</span>
+                        </div>
+                        <div class="transaction-row">
+                            <span>Jan 15, 2026</span>
+                            <span><i class="fas fa-arrow-down"></i> Refund</span>
+                            <span>Digital Payment Provider</span>
+                            <span>+$5,200</span>
+                            <span><span class="badge success">Completed</span></span>
+                        </div>
+                        <div class="transaction-row">
+                            <span>Jan 12, 2026</span>
+                            <span><i class="fas fa-file-alt"></i> Claim</span>
+                            <span>New Claim - Case #FTB-2026-001234</span>
+                            <span>$3,400</span>
+                            <span><span class="badge pending">Processing</span></span>
+                        </div>
+                        <div class="transaction-row">
+                            <span>Jan 10, 2026</span>
+                            <span><i class="fas fa-check-circle"></i> Approval</span>
+                            <span>Claim Approved - Case #FTB-2026-001233</span>
+                            <span>+$7,850</span>
+                            <span><span class="badge success">Completed</span></span>
+                        </div>
+                        <div class="transaction-row">
+                            <span>Jan 8, 2026</span>
+                            <span><i class="fas fa-arrow-down"></i> Refund</span>
+                            <span>Merchant Account Refund</span>
+                            <span>+$2,100</span>
+                            <span><span class="badge success">Completed</span></span>
+                        </div>
+                        <div class="transaction-row">
+                            <span>Jan 5, 2026</span>
+                            <span><i class="fas fa-file-alt"></i> Claim</span>
+                            <span>New Claim - Case #FTB-2026-001232</span>
+                            <span>$4,600</span>
+                            <span><span class="badge success">Completed</span></span>
+                        </div>
+                        <div class="transaction-row">
+                            <span>Jan 1, 2026</span>
+                            <span><i class="fas fa-arrow-down"></i> Refund</span>
+                            <span>Platform Adjustment</span>
+                            <span>+$1,850</span>
+                            <span><span class="badge success">Completed</span></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Claims Section -->
+            <section class="section" id="claims">
+                <div class="card full-card">
+                    <div class="card-header-dash">
+                        <h3>My Claims</h3>
+                        <button class="btn btn-primary btn-sm">+ New Claim</button>
+                    </div>
+                    <div class="claims-list">
+                        <div class="claim-card">
+                            <div class="claim-header">
+                                <div>
+                                    <h4>Case #FTB-2026-001234</h4>
+                                    <p>Filed on January 12, 2026</p>
+                                </div>
+                                <span class="badge pending">Processing</span>
+                            </div>
+                            <div class="claim-body">
+                                <div class="claim-field">
+                                    <span>Claim Amount:</span>
+                                    <strong>$3,400</strong>
+                                </div>
+                                <div class="claim-field">
+                                    <span>Category:</span>
+                                    <strong>Unauthorized Transaction</strong>
+                                </div>
+                                <div class="claim-field">
+                                    <span>Description:</span>
+                                    <strong>Fraudulent charges on digital payment platform</strong>
+                                </div>
+                            </div>
+                            <div class="claim-footer">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 65%;"></div>
+                                </div>
+                                <p class="progress-text">Under Review (65% Complete)</p>
+                            </div>
+                        </div>
+
+                        <div class="claim-card">
+                            <div class="claim-header">
+                                <div>
+                                    <h4>Case #FTB-2026-001233</h4>
+                                    <p>Filed on January 10, 2026</p>
+                                </div>
+                                <span class="badge success">Approved</span>
+                            </div>
+                            <div class="claim-body">
+                                <div class="claim-field">
+                                    <span>Claim Amount:</span>
+                                    <strong>$7,850</strong>
+                                </div>
+                                <div class="claim-field">
+                                    <span>Category:</span>
+                                    <strong>Merchant Refund</strong>
+                                </div>
+                                <div class="claim-field">
+                                    <span>Description:</span>
+                                    <strong>Refund from online retailer for returned items</strong>
+                                </div>
+                            </div>
+                            <div class="claim-footer">
+                                <p class="success-text">✓ Approved | Funds transferred on Jan 15, 2026</p>
+                            </div>
+                        </div>
+
+                        <div class="claim-card">
+                            <div class="claim-header">
+                                <div>
+                                    <h4>Case #FTB-2026-001232</h4>
+                                    <p>Filed on January 5, 2026</p>
+                                </div>
+                                <span class="badge success">Completed</span>
+                            </div>
+                            <div class="claim-body">
+                                <div class="claim-field">
+                                    <span>Claim Amount:</span>
+                                    <strong>$4,600</strong>
+                                </div>
+                                <div class="claim-field">
+                                    <span>Category:</span>
+                                    <strong>Service Dispute</strong>
+                                </div>
+                                <div class="claim-field">
+                                    <span>Description:</span>
+                                    <strong>Refund for undelivered digital service subscription</strong>
+                                </div>
+                            </div>
+                            <div class="claim-footer">
+                                <p class="success-text">✓ Completed | Funds received on Jan 8, 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Settings Section -->
+            <section class="section" id="settings">
+                <div class="card full-card">
+                    <div class="card-header-dash">
+                        <h3>Account Settings</h3>
+                    </div>
+                    <div class="settings-grid">
+                        <div class="settings-group">
+                            <h4>Profile Information</h4>
+                            <div class="setting-item">
+                                <label>Full Name</label>
+                                <input type="text" value="Alexandra Johnson" disabled>
+                            </div>
+                            <div class="setting-item">
+                                <label>Email Address</label>
+                                <input type="email" value="alexandra.johnson@email.com">
+                            </div>
+                            <div class="setting-item">
+                                <label>Phone Number</label>
+                                <input type="tel" value="+1 (555) 123-4567">
+                            </div>
+                            <button class="btn btn-primary btn-sm">Update Profile</button>
+                        </div>
+
+                        <div class="settings-group">
+                            <h4>Security</h4>
+                            <div class="setting-item">
+                                <label>Two-Factor Authentication</label>
+                                <div class="toggle-switch">
+                                    <input type="checkbox" checked>
+                                    <span>Enabled</span>
+                                </div>
+                            </div>
+                            <div class="setting-item">
+                                <label>Password</label>
+                                <button class="btn btn-secondary btn-sm">Change Password</button>
+                            </div>
+                        </div>
+
+                        <div class="settings-group">
+                            <h4>Notifications</h4>
+                            <div class="setting-item">
+                                <label>Email Notifications</label>
+                                <div class="toggle-switch">
+                                    <input type="checkbox" checked>
+                                    <span>Enabled</span>
+                                </div>
+                            </div>
+                            <div class="setting-item">
+                                <label>SMS Alerts</label>
+                                <div class="toggle-switch">
+                                    <input type="checkbox" checked>
+                                    <span>Enabled</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" style="margin-top: 20px;">Save Settings</button>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Floating Support Widget -->
+    <div class="floating-widget">
+        <button class="widget-toggle" onclick="toggleWidget()">
+            <i class="fas fa-comments"></i>
+        </button>
+        <div class="widget-menu" id="widgetMenu">
+            <a href="https://wa.me/1234567890" class="widget-btn whatsapp" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp Support</span>
+            </a>
+            <a href="https://m.me/fintechrefund" class="widget-btn messenger" target="_blank">
+                <i class="fab fa-facebook-messenger"></i>
+                <span>Messenger Support</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>
